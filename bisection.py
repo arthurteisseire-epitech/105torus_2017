@@ -5,7 +5,7 @@ def bisection(a0, a1, a2, a3, a4, n):
 	y_f = 0
 	while(round(y_d, n - 1) != round(y_f, n - 1)):
 		x_n = (x_d + x_f) / 2
-		print('{:.6g}'.format(x_n))
+		print('{x_n:.{n}g}'.format(n = n, x_n = x_n))
 		y_d = f4(x_d, a0, a1, a2, a3, a4)
 		y_f = f4(x_n, a0, a1, a2, a3, a4)
 		if ((y_d >= 0 and y_f <= 0) or (y_d <= 0 and y_f >= 0)):
