@@ -2,7 +2,10 @@
 
 from parse import *
 from bisection import *
+from newton import *
 
 args = parse_all()
 if (args.opt == 1):
 	bisection(args.a0, args.a1, args.a2, args.a3, args.a4, args.n)
+if (args.opt == 2):
+	newton(args.a0, args.a1, args.a2, args.a3, args.a4, args.n)
