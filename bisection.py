@@ -3,7 +3,7 @@ def bisection(a0, a1, a2, a3, a4, n):
 	x_f = 1.0
 	while (x_f - x_d > pow(10, -n)):
 		x_n = (x_d + x_f) / 2
-		print('%s' %(str(x_n).rstrip('0')[:n + 2]))
+		print('x = %s' %(str(x_n).rstrip('0')[:n + 2]))
 		y_d = f4(x_d, a0, a1, a2, a3, a4)
 		y_f = f4(x_n, a0, a1, a2, a3, a4)
 		if (y_f * y_d > 0):
